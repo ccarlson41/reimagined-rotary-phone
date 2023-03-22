@@ -1,0 +1,122 @@
++----------------------------------------------------------------------------------------+
+| Summary Report - By Total                                                              |
++----------------------------------------------------------------------------------------+
+Invoice #  Store      Customer                       Num Items          Tax       Total
+INV0002     S0002     Washington, Denzel             3          $    506.05 $  25011.89
+INV0003     S0003     Washington, Denzel             2          $    503.58 $  12736.91
+INV0001     S0001     Blanchett, Cate                3          $    615.51 $  10840.51
+INV0004     S0001     Roberts, Julia                 0          $      0.00 $         0
++----------------------------------------------------------------------------------------+
+                                                     8          $   1625.15 $  48589.30
+
++----------------------------------------------------------------+
+| Store Sales Summary Report                                     |
++----------------------------------------------------------------+
+Store      Manager                        # Sales    Grand Total    
+S0001     Blanchett, Cate                   3          $  10840.51
+S0004     Hanks, Tom                        0          $      0.00
+S0005     Roberts, Julia                    0          $      0.00
+S0002     Streep, Meryl                     3          $  25011.87
+S0003     Washington, Denzel                2          $  12720.25
++----------------------------------------------------------------+
+                                            8          $  48589.30
+
+Invoice  #INV0001
+Store    S0001
+Date      2021-04-01
+Customer: 
+Blanchett, Cate (P0001 : [cate.blanchett@example.com])
+	123 Main St
+	Sydney NSW 2000 Australia
+
+Sales Person: 
+Streep, Meryl (P0002 : [meryl.streep@example.com])
+	456 Maple St
+	Los Angeles CA 90001 USA
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+EQ0001          (Purchase) Excavator-Model A 
+                                                             $   1500.00
+PR0001          (Product)  Top Soil
+	10 @ $850.00/ton
+                                                             $   8500.00
+SV0001         (Service) Landscaping           
+	3.0 hours @ 75.00/hr
+                                                             $    225.00
+                                                             -=-=-=-=-=-
+                                                    Subtotal $  9609.49
+                                                         Tax $    615.51
+                                                 Grand Total $  10225.00
+Invoice  #INV0002
+Store    #S0002
+Date      2022-11-03
+Customer: 
+Washington, Denzel (P0003 : [denzel.washington@example.com])
+	789 Oak St
+	New York NY 10001 USA
+
+Sales Person: 
+Streep, Meryl (P0002 : [meryl.streep@example.com])
+	456 Maple St
+	Los Angeles CA 90001 USA
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+EQ0002         (Lease) Bulldozer-Model B
+	365 days (2023-01-01 -> 2023-12-31) @ $2000.00/ 30 days
+                                                             $  24333.33
+PR0002         (Product) Lawn Seed         
+	5 @ $2.50/Pound
+                                                             $      2.50
+SV0002         (Service) Hardscaping             
+	2 hours @ $85.00/hr
+                                                             $    170.00
+                                                             -=-=-=-=-=-
+                                                    Subtotal $  23999.78
+                                                         Tax $    506.05
+                                                 Grand Total $  24505.83
+Invoice  #INV003
+Store    #S0003
+Date      2020-05-15
+Customer: 
+Washington, Denzel (P0003 : [denzel.washington@example.com])
+	789 Oak St
+	New York NY 10001 USA
+
+Sales Person: 
+Hanks, Tom (P0004 : [tom.hanks@example.com])
+	1010 Pine St
+	Chicago IL 60610 USA
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+EQ0003	    	(Lease) Loader-Model C
+	700 days (2022-02-01 -> 2024-02-01) @ $500.00/ 30 days
+															 $  12166.67
+PR0003			(Product) Mulch
+	2 @ $25.00/Cubic Yard
+															 $     50.00
+						                                     -=-=-=-=-=-
+                                                    Subtotal $  11729.75
+                                                         Tax $    503.58
+                                                 Grand Total $  12233.33
+Invoice  #INV0004
+Store    #S0001
+Date      2022-12-21
+Customer: 
+Roberts, Julia (P0005 : [julia.roberts@example.com])
+	1212 Elm St
+	San Francisco CA 94101 USA
+
+Sales Person: 
+Cumberbatch, Benedict (P0006 : [benedict.cumberbatch@example.com	])
+	1414 Birch St
+	London UK 12883 UK
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+						                                     -=-=-=-=-=-
+                                                    Subtotal $      0.00
+                                                         Tax $      0.00
+                                                 Grand Total $      0.00                                                           Total

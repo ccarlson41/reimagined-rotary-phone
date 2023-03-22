@@ -1,0 +1,10 @@
+9
+EQ0001,E,Excavator,Model A
+EQ0002,E,Bulldozer,Model B
+EQ0003,E,Loader,Model C
+PR0001,P,Top Soil,Ton,850.00
+PR0002,P,Lawn Seed,Pound,0.50
+PR0003,P,Mulch,Cubic Yard,25.00
+SV0001,S,Landscaping,75.00
+SV0002,S,Hardscaping,85.00
+SV0003,S,Maintenance,65.00

@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<Items>
+  <equipment>
+    <code>EQ0001</code>
+    <name>Excavator</name>
+    <model>Model A</model>
+  </equipment>
+  <equipment>
+    <code>EQ0002</code>
+    <name>Bulldozer</name>
+    <model>Model B</model>
+  </equipment>
+  <equipment>
+    <code>EQ0003</code>
+    <name>Loader</name>
+    <model>Model C</model>
+  </equipment>
+  <product>
+    <code>PR0001</code>
+    <name>Top Soil</name>
+    <unit>Ton</unit>
+    <unitPrice>850.0</unitPrice>
+  </product>
+  <product>
+    <code>PR0002</code>
+    <name>Lawn Seed</name>
+    <unit>Pound</unit>
+    <unitPrice>0.5</unitPrice>
+  </product>
+  <product>
+    <code>PR0003</code>
+    <name>Mulch</name>
+    <unit>Cubic Yard</unit>
+    <unitPrice>25.0</unitPrice>
+  </product>
+  <service>
+    <code>SV0001</code>
+    <name>Landscaping</name>
+    <hourlyRate>75.0</hourlyRate>
+  </service>
+  <service>
+    <code>SV0002</code>
+    <name>Hardscaping</name>
+    <hourlyRate>85.0</hourlyRate>
+  </service>
+  <service>
+    <code>SV0003</code>
+    <name>Maintenance</name>
+    <hourlyRate>65.0</hourlyRate>
+  </service>
+</Items>

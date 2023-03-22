@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<Stores>
+  <com.fmt.Store>
+    <storeCode>S0001</storeCode>
+    <manager>
+      <personCode>P0001</personCode>
+      <lastName>Blanchett</lastName>
+      <firstName>Cate</firstName>
+      <address>
+        <street>123 Main St</street>
+        <city>Sydney</city>
+        <state>NSW</state>
+        <zip>2000</zip>
+        <country>Australia</country>
+      </address>
+      <email>
+        <string>cate.blanchett@example.com</string>
+      </email>
+    </manager>
+    <address>
+      <street>123 Main St</street>
+      <city>Sydney</city>
+      <state>NSW</state>
+      <zip>2000</zip>
+      <country>Australia</country>
+    </address>
+  </com.fmt.Store>
+  <com.fmt.Store>
+    <storeCode>S0002</storeCode>
+    <manager>
+      <personCode>P0002</personCode>
+      <lastName>Streep</lastName>
+      <firstName>Meryl</firstName>
+      <address>
+        <street>456 Maple St</street>
+        <city>Los Angeles</city>
+        <state>CA</state>
+        <zip>90001</zip>
+        <country>USA</country>
+      </address>
+      <email>
+        <string>meryl.streep@example.com</string>
+      </email>
+    </manager>
+    <address>
+      <street>456 Maple St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+      <country>USA</country>
+    </address>
+  </com.fmt.Store>
+  <com.fmt.Store>
+    <storeCode>S0003</storeCode>
+    <manager>
+      <personCode>P0003</personCode>
+      <lastName>Washington</lastName>
+      <firstName>Denzel</firstName>
+      <address>
+        <street>789 Oak St</street>
+        <city>New York</city>
+        <state>NY</state>
+        <zip>10001</zip>
+        <country>USA</country>
+      </address>
+      <email>
+        <string>denzel.washington@example.com</string>
+      </email>
+    </manager>
+    <address>
+      <street>789 Oak St</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zip>10001</zip>
+      <country>USA</country>
+    </address>
+  </com.fmt.Store>
+  <com.fmt.Store>
+    <storeCode>S0004</storeCode>
+    <manager>
+      <personCode>P0004</personCode>
+      <lastName>Hanks</lastName>
+      <firstName>Tom</firstName>
+      <address>
+        <street>1010 Pine St</street>
+        <city>Chicago</city>
+        <state>IL</state>
+        <zip>60601</zip>
+        <country>USA</country>
+      </address>
+      <email>
+        <string>tom.hanks@example.com</string>
+      </email>
+    </manager>
+    <address>
+      <street>1010 Pine St</street>
+      <city>Chicago</city>
+      <state>IL</state>
+      <zip>60601</zip>
+      <country>USA</country>
+    </address>
+  </com.fmt.Store>
+  <com.fmt.Store>
+    <storeCode>S0005</storeCode>
+    <manager>
+      <personCode>P0005</personCode>
+      <lastName>Roberts</lastName>
+      <firstName>Julia</firstName>
+      <address>
+        <street>1212 Elm St</street>
+        <city>San Francisco</city>
+        <state>CA</state>
+        <zip>94101</zip>
+        <country>USA</country>
+      </address>
+      <email>
+        <string>julia.roberts@example.com</string>
+      </email>
+    </manager>
+    <address>
+      <street>1212 Elm St</street>
+      <city>San Francisco</city>
+      <state>CA</state>
+      <zip>94101</zip>
+      <country>USA</country>
+    </address>
+  </com.fmt.Store>
+</Stores>

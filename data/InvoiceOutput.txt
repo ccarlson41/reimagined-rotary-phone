@@ -1,0 +1,24 @@
++-------------------------------------------------------------------------+
+| Sales by Customer                                                       |
++-------------------------------------------------------------------------+
+Sale       Store      Customer             Salesperson          Total     
+INV0001    S0001      Blanchett,Cate               Streep,Meryl $      2.20
+INV0002    S0002      Washington,Denzel            Streep,Meryl $      2.20
+INV0003    S0003      Washington,Denzel               Hanks,Tom $      2.20
+INV0004    S0001      Roberts,Julia        Cumberbatch,Benedict $      2.20
++-------------------------------------------------------------------------+
+| Sales by Total                                                       |
++-------------------------------------------------------------------------+
+Sale       Store      Customer             Salesperson          Total     
+INV0001    S0001      Blanchett,Cate               Streep,Meryl $      2.20
+INV0002    S0002      Washington,Denzel            Streep,Meryl $      2.20
+INV0003    S0003      Washington,Denzel               Hanks,Tom $      2.20
+INV0004    S0001      Roberts,Julia        Cumberbatch,Benedict $      2.20
++-------------------------------------------------------------------------+
+| Sales by Store                                                       |
++-------------------------------------------------------------------------+
+Sale       Store      Customer             Salesperson          Total     
+INV0001    S0001      Blanchett,Cate               Streep,Meryl $      2.20
+INV0002    S0002      Washington,Denzel            Streep,Meryl $      2.20
+INV0003    S0003      Washington,Denzel               Hanks,Tom $      2.20
+INV0004    S0001      Roberts,Julia        Cumberbatch,Benedict $      2.20

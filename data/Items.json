@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Model A",
+    "code": "EQ0001",
+    "name": "Excavator"
+  },
+  {
+    "model": "Model B",
+    "code": "EQ0002",
+    "name": "Bulldozer"
+  },
+  {
+    "model": "Model C",
+    "code": "EQ0003",
+    "name": "Loader"
+  },
+  {
+    "unit": "Ton",
+    "unitPrice": 850.0,
+    "code": "PR0001",
+    "name": "Top Soil"
+  },
+  {
+    "unit": "Pound",
+    "unitPrice": 0.5,
+    "code": "PR0002",
+    "name": "Lawn Seed"
+  },
+  {
+    "unit": "Cubic Yard",
+    "unitPrice": 25.0,
+    "code": "PR0003",
+    "name": "Mulch"
+  },
+  {
+    "hourlyRate": 75.0,
+    "code": "SV0001",
+    "name": "Landscaping"
+  },
+  {
+    "hourlyRate": 85.0,
+    "code": "SV0002",
+    "name": "Hardscaping"
+  },
+  {
+    "hourlyRate": 65.0,
+    "code": "SV0003",
+    "name": "Maintenance"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "personCode": "P0001",
+    "lastName": "Blanchett",
+    "firstName": "Cate",
+    "address": {
+      "street": "123 Main St",
+      "city": "Sydney",
+      "state": "NSW",
+      "zip": "2000",
+      "country": "Australia"
+    },
+    "email": [
+      "cate.blanchett@example.com"
+    ]
+  },
+  {
+    "personCode": "P0002",
+    "lastName": "Streep",
+    "firstName": "Meryl",
+    "address": {
+      "street": "456 Maple St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001",
+      "country": "USA"
+    },
+    "email": [
+      "meryl.streep@example.com"
+    ]
+  },
+  {
+    "personCode": "P0003",
+    "lastName": "Washington",
+    "firstName": "Denzel",
+    "address": {
+      "street": "789 Oak St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "email": [
+      "denzel.washington@example.com"
+    ]
+  },
+  {
+    "personCode": "P0004",
+    "lastName": "Hanks",
+    "firstName": "Tom",
+    "address": {
+      "street": "1010 Pine St",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601",
+      "country": "USA"
+    },
+    "email": [
+      "tom.hanks@example.com"
+    ]
+  },
+  {
+    "personCode": "P0005",
+    "lastName": "Roberts",
+    "firstName": "Julia",
+    "address": {
+      "street": "1212 Elm St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94101",
+      "country": "USA"
+    },
+    "email": [
+      "julia.roberts@example.com"
+    ]
+  },
+  {
+    "personCode": "P0006",
+    "lastName": "Cumberbatch",
+    "firstName": "Benedict",
+    "address": {
+      "street": "1414 Birch St",
+      "city": "London",
+      "state": "UK",
+      "zip": "NW1 6XE",
+      "country": "UK"
+    },
+    "email": [
+      "benedict.cumberbatch@example.com"
+    ]
+  },
+  {
+    "personCode": "P0007",
+    "lastName": "Pitt",
+    "firstName": "Brad",
+    "address": {
+      "street": "1616 Walnut St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001",
+      "country": "USA"
+    },
+    "email": [
+      "brad.pitt@example.com"
+    ]
+  },
+  {
+    "personCode": "P0008",
+    "lastName": "Johansson",
+    "firstName": "Scarlett",
+    "address": {
+      "street": "1818 Cedar St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "email": [
+      "scarlett.johansson@example.com"
+    ]
+  },
+  {
+    "personCode": "P0009",
+    "lastName": "DiCaprio",
+    "firstName": "Leonardo",
+    "address": {
+      "street": "2020 Oak St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001",
+      "country": "USA"
+    },
+    "email": [
+      "leonardo.dicaprio@example.com"
+    ]
+  },
+  {
+    "personCode": "P0010",
+    "lastName": "Smith",
+    "firstName": "Will",
+    "address": {
+      "street": "2222 Pine St",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101",
+      "country": "USA"
+    },
+    "email": [
+      "will.smith@example.com"
+    ]
+  },
+  {
+    "personCode": "P0011",
+    "lastName": "Lawrence",
+    "firstName": "Jennifer",
+    "address": {
+      "street": "2424 Elm St",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40201",
+      "country": "USA"
+    },
+    "email": [
+      "jennifer.lawrence@example.com"
+    ]
+  },
+  {
+    "personCode": "P0012",
+    "lastName": "Hathaway",
+    "firstName": "Anne",
+    "address": {
+      "street": "2626 Cedar St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "email": [
+      "anne.hathaway@example.com"
+    ]
+  },
+  {
+    "personCode": "P0013",
+    "lastName": "Fassbender",
+    "firstName": "Michael",
+    "address": {
+      "street": "2828 Maple St",
+      "city": "London",
+      "state": "UK",
+      "zip": "W1J 7BU",
+      "country": "UK"
+    },
+    "email": [
+      "michael.fassbender@example.com"
+    ]
+  },
+  {
+    "personCode": "P0014",
+    "lastName": "Blunt",
+    "firstName": "Emily",
+    "address": {
+      "street": "3030 Oak St",
+      "city": "London",
+      "state": "UK",
+      "zip": "SW1X 7LJ",
+      "country": "UK"
+    },
+    "email": [
+      "emily.blunt@example.com"
+    ]
+  },
+  {
+    "personCode": "P0015",
+    "lastName": "Bale",
+    "firstName": "Christian",
+    "address": {
+      "street": "3232 Pine St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001",
+      "country": "USA"
+    },
+    "email": [
+      "christian.bale@example.com"
+    ]
+  }
+]

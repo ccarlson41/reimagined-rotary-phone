@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<persons>
+  <person>
+    <personCode>P0001</personCode>
+    <lastName>Blanchett</lastName>
+    <firstName>Cate</firstName>
+    <address>
+      <street>123 Main St</street>
+      <city>Sydney</city>
+      <state>NSW</state>
+      <zip>2000</zip>
+      <country>Australia</country>
+    </address>
+    <emails>
+      <email>cate.blanchett@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0002</personCode>
+    <lastName>Streep</lastName>
+    <firstName>Meryl</firstName>
+    <address>
+      <street>456 Maple St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>meryl.streep@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0003</personCode>
+    <lastName>Washington</lastName>
+    <firstName>Denzel</firstName>
+    <address>
+      <street>789 Oak St</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zip>10001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>denzel.washington@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0004</personCode>
+    <lastName>Hanks</lastName>
+    <firstName>Tom</firstName>
+    <address>
+      <street>1010 Pine St</street>
+      <city>Chicago</city>
+      <state>IL</state>
+      <zip>60601</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>tom.hanks@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0005</personCode>
+    <lastName>Roberts</lastName>
+    <firstName>Julia</firstName>
+    <address>
+      <street>1212 Elm St</street>
+      <city>San Francisco</city>
+      <state>CA</state>
+      <zip>94101</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>julia.roberts@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0006</personCode>
+    <lastName>Cumberbatch</lastName>
+    <firstName>Benedict</firstName>
+    <address>
+      <street>1414 Birch St</street>
+      <city>London</city>
+      <state>UK</state>
+      <zip>NW1 6XE</zip>
+      <country>UK</country>
+    </address>
+    <emails>
+      <email>benedict.cumberbatch@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0007</personCode>
+    <lastName>Pitt</lastName>
+    <firstName>Brad</firstName>
+    <address>
+      <street>1616 Walnut St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>brad.pitt@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0008</personCode>
+    <lastName>Johansson</lastName>
+    <firstName>Scarlett</firstName>
+    <address>
+      <street>1818 Cedar St</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zip>10001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>scarlett.johansson@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0009</personCode>
+    <lastName>DiCaprio</lastName>
+    <firstName>Leonardo</firstName>
+    <address>
+      <street>2020 Oak St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>leonardo.dicaprio@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0010</personCode>
+    <lastName>Smith</lastName>
+    <firstName>Will</firstName>
+    <address>
+      <street>2222 Pine St</street>
+      <city>Miami</city>
+      <state>FL</state>
+      <zip>33101</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>will.smith@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0011</personCode>
+    <lastName>Lawrence</lastName>
+    <firstName>Jennifer</firstName>
+    <address>
+      <street>2424 Elm St</street>
+      <city>Louisville</city>
+      <state>KY</state>
+      <zip>40201</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>jennifer.lawrence@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0012</personCode>
+    <lastName>Hathaway</lastName>
+    <firstName>Anne</firstName>
+    <address>
+      <street>2626 Cedar St</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zip>10001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>anne.hathaway@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0013</personCode>
+    <lastName>Fassbender</lastName>
+    <firstName>Michael</firstName>
+    <address>
+      <street>2828 Maple St</street>
+      <city>London</city>
+      <state>UK</state>
+      <zip>W1J 7BU</zip>
+      <country>UK</country>
+    </address>
+    <emails>
+      <email>michael.fassbender@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0014</personCode>
+    <lastName>Blunt</lastName>
+    <firstName>Emily</firstName>
+    <address>
+      <street>3030 Oak St</street>
+      <city>London</city>
+      <state>UK</state>
+      <zip>SW1X 7LJ</zip>
+      <country>UK</country>
+    </address>
+    <emails>
+      <email>emily.blunt@example.com</email>
+    </emails>
+  </person>
+  <person>
+    <personCode>P0015</personCode>
+    <lastName>Bale</lastName>
+    <firstName>Christian</firstName>
+    <address>
+      <street>3232 Pine St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+      <country>USA</country>
+    </address>
+    <emails>
+      <email>christian.bale@example.com</email>
+    </emails>
+  </person>
+</persons>
