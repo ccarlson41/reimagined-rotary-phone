@@ -18,13 +18,13 @@ public class DataConverter {
 	public static void main(String args[]) {
 
 		List<Person> people = new ArrayList<>();
-		people = LoadData.loadPeople("data/Persons.csv");
+		people = LoadDataCSV.loadPeople("data/Persons.csv");
 
 		List<Store> stores = new ArrayList<>();
-		stores = LoadData.loadStore("data/Stores.csv", people);
+		stores = LoadDataCSV.loadStore("data/Stores.csv", people);
 
 		List<Item> items = new ArrayList<>();
-		items = LoadData.loadItem("data/Items.csv");
+		items = LoadDataCSV.loadItem("data/Items.csv");
 		
 		FormatData.outputPerson("data/Persons.xml", "data/Persons.json", people);
 		FormatData.outputStore("data/Stores.xml", "data/Stores.json", stores);

@@ -16,7 +16,7 @@ import java.util.Scanner;
  * objects
  */
 
-public class LoadData {
+public class LoadDataCSV {
 
 	/**
 	 * Loads Each Person from csv file into a list

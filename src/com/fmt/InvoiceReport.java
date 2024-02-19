@@ -1,8 +1,13 @@
 package com.fmt;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.logging.log4j.core.config.DefaultConfiguration;
 
 /**
  * Authors: Cam Carlson and Peyton Nelson 03/03/2023 This class formats the data
@@ -11,15 +16,70 @@ import java.util.List;
 public class InvoiceReport {
 
 	/**
-	 * Formats the data to make an Invoice report
+	 * Formats the data to make an Invoice report using Linked Lists.
+	 * 
+	 * @param <T>
 	 * 
 	 * @param persons
 	 * @param invoices
 	 * @param stores
 	 */
-	public static void outputInvoiceItems(List<Person> persons, List<Invoice> invoices, List<Store> stores) {
+	public static <T> void outputInvoiceReport(LinkedList<Invoice> byCustomer,LinkedList<Invoice> byTotal, LinkedList<Invoice> byStore, List<Store> stores) {
+		String invCode = null;
+		String store = null;
+		String customer = null;
+		String salesPerson = null;
+		double total = 0;
+		
+		System.out.println("+-------------------------------------------------------------------------+");
+		System.out.println("| Sales by Customer                                                       |");
+		System.out.println("+-------------------------------------------------------------------------+)");
+		System.out.println("Sale       Store      Customer             Salesperson          Total     )");
+		for (Invoice invoice: byCustomer) {
+			invCode = invoice.getInvoiceCode();
+			store = invoice.getStore().getStoreCode();
+			customer = invoice.getCustomer().getLastName() + ", " + invoice.getCustomer().getFirstName();
+			salesPerson = invoice.getSalesPerson().getLastName() + ", " + invoice.getSalesPerson().getFirstName();
+			total = invoice.getTotal();
+			System.out.printf("%-10s %-10s %-19s  %-18s $%6.2f\n", invCode, store, customer, salesPerson, total);
+		}
 
-		Collections.sort(invoices, Collections.reverseOrder(Invoice.compareByTotal));
+		System.out.println("+-------------------------------------------------------------------------+");
+		System.out.println("| Sales by Total                                                      |");
+		System.out.println("+-------------------------------------------------------------------------+");
+		System.out.println("Sale       Store      Customer             Salesperson          Total     ");
+		for (Invoice invoice: byTotal) {
+			invCode = invoice.getInvoiceCode();
+			store = invoice.getStore().getStoreCode();
+			customer = invoice.getCustomer().getLastName() + ", " + invoice.getCustomer().getFirstName();
+			salesPerson = invoice.getSalesPerson().getLastName() + ", " + invoice.getSalesPerson().getFirstName();
+			total = invoice.getTotal();
+			System.out.printf("%-10s %-10s %-19s  %-18s $%6.2f\n", invCode, store, customer, salesPerson, total);
+		}
+		
+
+		System.out.println("+-------------------------------------------------------------------------+");
+		System.out.println("| Sales by Store                                                       |");
+		System.out.println("+-------------------------------------------------------------------------+");
+		System.out.println("Sale       Store      Customer             Salesperson          Total     ");
+		for (Invoice invoice: byStore) {
+			invCode = invoice.getInvoiceCode();
+			store = invoice.getStore().getStoreCode();
+			customer = invoice.getCustomer().getLastName() + ", " + invoice.getCustomer().getFirstName();
+			salesPerson = invoice.getSalesPerson().getLastName() + ", " + invoice.getSalesPerson().getFirstName();
+			total = invoice.getTotal();
+			System.out.printf("%-10s %-10s %-19s  %-18s $%6.2f\n", invCode, store, customer, salesPerson, total);
+		}
+
+	}
+	
+	/*
+	 * Formats the data to print to the standard output using traditional sorting mathods. 
+	 */
+
+	public static void outputInvoiceItems(List<Invoice> invoices, List<Store> stores) {
+
+		Collections.sort(invoices, Collections.reverseOrder(Invoice.byTotal));
 		System.out
 				.println("+----------------------------------------------------------------------------------------+");
 		System.out
@@ -69,7 +129,7 @@ public class InvoiceReport {
 		System.out.printf("                                          %d            $  %.2f\n", totalNumSales,
 				totalTotal);
 
-		Collections.sort(invoices, Invoice.compareByInvoiceCode);
+		Collections.sort(invoices, Invoice.byInvoiceCode);
 
 		for (Invoice invoice : invoices) {
 			System.out.printf("\n\nInvoice  #%s\n", invoice.getInvoiceCode());
@@ -94,7 +154,6 @@ public class InvoiceReport {
 			System.out.printf("Item                                                               Total\n");
 			System.out.printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-\n");
 
-			
 			double total = 0.0;
 			double tax = 0.0;
 			for (Item item : invoice.getPurchased()) {
@@ -138,22 +197,24 @@ public class InvoiceReport {
 
 	}
 
-	public static void main(String args[]) {
+	public static <T> void main(String args[]) {
+		Configurator.initialize(new DefaultConfiguration());
+		Configurator.setRootLevel(Level.INFO);
 
-		List<Person> people = new ArrayList<>();
-		people = LoadData.loadPeople("data/Persons.csv");
+		List<Store> stores = LoadDataDB.loadStores();
+		List<Invoice> invoices = LoadDataDB.loadInvoices();
+		
+		LinkedList<Invoice> listByCustomer = new LinkedList<Invoice>(Invoice.byCustomer);
+		LinkedList<Invoice> listByTotal = new LinkedList<Invoice>(Invoice.byTotal);
+		LinkedList<Invoice> listByStore = new LinkedList<Invoice>(Invoice.byStore);
 
-		List<Store> stores = new ArrayList<>();
-		stores = LoadData.loadStore("data/Stores.csv", people);
+		for(Invoice i: invoices) {
+			listByCustomer.add(i);
+			listByTotal.add(i);
+			listByStore.add(i);
+		}
+				
+		InvoiceReport.outputInvoiceReport(listByCustomer, listByTotal, listByStore, stores);
 
-		List<Item> items = new ArrayList<>();
-		items = LoadData.loadItem("data/Items.csv");
-
-		List<Invoice> invoices = new ArrayList<>();
-		invoices = LoadData.loadInvoice("data/Invoices.csv", stores, people);
-
-		LoadData.loadInvoiceItems("data/InvoiceItems.csv", invoices, items, stores);
-
-		outputInvoiceItems(people, invoices, stores);
 	}
 }

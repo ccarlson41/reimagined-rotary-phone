@@ -85,22 +85,74 @@ public class Invoice {
 				+ salesPerson + ", invoiceDate=" + invoiceDate + ", purchased=" + purchased + "]";
 	}
 
-	public static final Comparator<Invoice> compareByTotal = new Comparator<>() {
-		public int compare(Invoice p1, Invoice p2) {
-			return Double.compare(p1.getTotal(), p2.getTotal());
-		}
+	public static final Comparator<Invoice> byTotal = new Comparator<>() {
+	    public int compare(Invoice p1, Invoice p2) {
+	        return Double.compare(p1.getTotal(), p2.getTotal());
+	    }
 	};
 
 	public static final Comparator<Invoice> byManager = new Comparator<>() {
-		public int compare(Invoice p1, Invoice p2) {
-			return p1.getStore().getManager().getLastName().compareTo(p2.getStore().getManager().getLastName());
-		}
+	    public int compare(Invoice p1, Invoice p2) {
+	        return p1.getStore().getManager().getLastName().compareTo(p2.getStore().getManager().getLastName());
+	    }
 	};
 
-	public static final Comparator<Invoice> compareByInvoiceCode = new Comparator<>() {
-		public int compare(Invoice p1, Invoice p2) {
-			return p1.getInvoiceCode().compareTo(p2.getInvoiceCode());
-		}
+	public static final Comparator<Invoice> byInvoiceCode = new Comparator<>() {
+	    public int compare(Invoice p1, Invoice p2) {
+	        return p1.getInvoiceCode().compareTo(p2.getInvoiceCode());
+	    }
 	};
 
-}
+	public static final Comparator<Invoice> byStore = new Comparator<>() {
+	    public int compare(Invoice p1, Invoice p2) {
+	        int storeCmp =  p2.getStore().getStoreCode().compareTo(p1.getStore().getStoreCode());
+	        if (storeCmp != 0) {
+	            return storeCmp;
+	        } else {
+	        	int lastNameCmp = p2.getSalesPerson().getLastName().compareTo(p1.getSalesPerson().getLastName());
+		        if (lastNameCmp != 0) {
+		            return lastNameCmp;
+		        } else {
+		            return p2.getSalesPerson().getFirstName().compareTo(p1.getSalesPerson().getFirstName());
+		        }
+	        }
+	    }
+	};
+	
+	public static final Comparator<Invoice> byCustomer = new Comparator<>() {
+	    public int compare(Invoice p1, Invoice p2) {
+	        int lastNameCmp = p2.getCustomer().getLastName().compareTo(p1.getCustomer().getLastName());
+	        if (lastNameCmp != 0) {
+	            return lastNameCmp;
+	        } else {
+	            return p2.getCustomer().getFirstName().compareTo(p1.getCustomer().getFirstName());
+	        }
+	    }
+	};
+
+
+	}
+	
+//	SortedInvoiceList invoicesByLastName = new SortedInvoiceList(new Comparator<Invoice>() {
+//	    public int compare(Invoice invoice1, Invoice invoice2) {
+//	        String lastName1 = invoice1.getCustomer().getLastName();
+//	        String lastName2 = invoice2.getCustomer().getLastName();
+//	        int lastNameCompare = lastName1.compareTo(lastName2);
+//	        if (lastNameCompare != 0) {
+//	            return lastNameCompare;
+//	        } else {
+//	            String firstName1 = invoice1.getCustomer().getFirstName();
+//	            String firstName2 = invoice2.getCustomer().getFirstName();
+//	            return firstName1.compareTo(firstName2);
+//	        }
+//	    }
+//	});
+//
+//	invoicesByLastName.add(invoice1);
+//	invoicesByLastName.add(invoice2);
+//	invoicesByLastName.add(invoice3);
+//
+	
+//	Invoice firstInvoiceByLastName = invoicesByLastName.get(0);
+
+

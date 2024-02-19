@@ -51,6 +51,15 @@ public class EquipmentLeased extends Equipment {
 	}
 
 	public double getTax() {
-		return 500.0;
-	}
+        double total = this.getTotal();
+        if(total >= 10000 && total < 100000) {
+            return 500.0;
+        }
+        else if(total >= 100000) {
+            return 1500.0;
+        }
+        else {
+            return 0.0;
+        }
+    }
 }

@@ -21,6 +21,7 @@ public class Store {
 		this.address = address;
 		this.sales = new ArrayList<>();
 	}
+	
 
 	public String toString() {
 		return this.storeCode + ", " + this.manager + ", " + this.address + "sales:: " + sales;
